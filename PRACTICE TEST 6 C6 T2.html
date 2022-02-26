@@ -1,0 +1,28 @@
+<html>
+    <style>
+        div{
+            text-align: center;
+        }
+    </style>
+    <body>
+    <div>
+        <h1>HOW ARE YOU FEELING TODAY</h1>
+        <button onclick="emotion.reply('angry')">ANGRY</button>
+        <button onclick="emotion.reply('happy')">HAPPY</button>
+        <button onclick="emotion.reply('sad')">SAD</button>
+        <button onclick="emotion.reply('idk')">IDK</button>
+    </div>
+    </body>
+
+   <script>
+       var emotion={
+           angry:"I know this would be hard for you now. But try talking to someone, it might help you feel better",
+           sad:"It's okay you feel sad. Try doing something you like! It might help you take your mind off",
+           happy:"It seems you are having a great day today! Try helping someone and share your happiness",
+           idk:"Well it ok to be confused. You'll be better snd you'll sort out things so chill.Talk to your best friendd.",
+           reply:function(feeling){
+               alert(this[feeling])
+           }
+       }
+   </script>
+</html>
